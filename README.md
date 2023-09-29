@@ -1,7 +1,7 @@
 # PRODIGY_Responsive-Landing-Page_01
 I develop this project during my internship at Info Tech .
 
-It is a Responsive landing page. 
+It is a landing page. created a contact section which any one can send a contact info.
 
 
 ## Stack used
