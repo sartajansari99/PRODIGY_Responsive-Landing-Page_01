@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+    <div class="outer">
+        <div class="submit">
+            <form onsubmit="send();reset();return false;">
+                <input type="text" id="name" placeholder="your name" required>
+                <input type="text" id="email" placeholder="email id" required>
+                <input type="text" id="phone" placeholder="phone no" required>
+                <textarea name="" id="message" cols="60" rows="10"></textarea>
+                <button onclick="send()">send</button>
+            </form>
+                </div>
+    </div>
+            <script src="https://smtpjs.com/v3/smtp.js">
+            </script>
+        <script>
+            
+             function send(){
+                console.log("fn call");
+                const name=document.getElementById('name').value;
+            const email=document.getElementById('email').value;
+            const phone=document.getElementById('phone').value;
+            const message=document.getElementById('message').value;
+            const body=(`'name'${name} 'email'${email} 'phone'${phone}'message'${message}'`)
+            console.log(body);
+            Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "sartaansari121sa@gmail.com",
+            Password : "FC52B35D49878191D2BBF211A4E974AF6B7B",
+            To : 'sartaansari121sa@gmail.com',
+            From :"sartaansari121sa@gmail.com",
+            Subject : "This is the subject",
+            Body :(`${message}`)
+        }).then(
+          message => alert(message)
+        );
+            }
+        </script>
+</body>
+</html>

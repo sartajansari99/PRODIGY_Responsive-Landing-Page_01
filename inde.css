@@ -1,0 +1,136 @@
+.submit {
+    margin-top: 100px;
+}
+
+.main {
+    height: 308vh;
+}
+
+.information h1 {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 50px;
+    color: blueviolet;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.infolist h3 {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    font-size: large;
+    height: 34px;
+    width: 100%;
+
+}
+
+.infolist h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.infolist {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 70%; */
+}
+
+.infolist p {
+    /* text-align: center; */
+    width: 70%;
+    margin-top: 20px;
+    font-size: large;
+
+}
+
+.diagram {
+    width: 40%;
+    height: 90vh;
+    background-color: aquamarine;
+    margin-top: 90px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box {
+    height: 140px;
+    width: 140px;
+    margin: 50px;
+    border-radius: 10px;
+    transition: 0.4s;
+
+}
+
+
+.box:hover {
+
+
+    height: 130px;
+    width: 130px;
+    font-size: 30px;
+    font-weight: 90;
+    cursor: pointer;
+}
+
+.do {
+    margin-top: 50px;
+    background-color: blue;
+}
+
+
+.deligate {
+    background-color: blueviolet;
+}
+
+.decide {
+    background-color: rgb(62, 58, 58);
+}
+
+.delete {
+    background-color: rgb(234, 23, 8);
+}
+
+.urgent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.urgent p {
+    margin-top: 40%;
+    margin-left: 15px;
+    color: white;
+}
+
+.noturgent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.noturgent p {
+    color: white;
+    margin-top: 40%;
+    margin-left: 15px;
+
+}
+
+.containers {
+    width: 100%;
+    height: 100vh;
+}
+
+.containers h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

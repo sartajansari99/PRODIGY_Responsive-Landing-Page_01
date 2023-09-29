@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script1.js" defer></script>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="logo">
+                <ul>
+                    <li><a href="#">
+                            <h1>SARTAJ.COM</h1>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="navright">
+                <ul>
+                    <li><a class="but" href="#">Home</a></li>
+                    <li><a class="but" href="#">Services</a></li>
+                    <li><a class="but" href="#">About Us</a></li>
+                    <li><a class="but" href="#">Contacts</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="task">
+            <div class="info sartaj">
+                <h1 id="manage">Manage Your Tasks</h1>
+
+                <button class="btn" >
+                    <meta http-equiv="refresh" content="delay_time; URL=new_website_url" />
+                   
+                    Learn More
+
+                    
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="plan">
+        <h1>Plan Your Goal Today?</h1>
+        <div class="inp">
+            <input type="text" placeholder="Enter Your Goal">
+            <button class="btn">Add todo</button>
+        </div>
+        <ul class="todo">
+            <li>
+                <span class="todo-input">plan your goal Today</span>
+                <div class="todobutton">
+                    <button class="add btn">Done</button>
+                    <button class="remove btn">Remove</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="outer">
+        <div class="submit">
+            <form onsubmit="send();reset();return false;">
+                <input type="text" id="Name" placeholder="your name" required>
+                <input type="text" id="Email" placeholder="email id" required>
+                <input type="text" id="Phone" placeholder="phone no" required>
+                <textarea name="" id="Message" cols="60" rows="10"></textarea>
+                <button onclick="send()">send</button>
+            </form>
+                </div>
+    </div>
+            <script src="https://smtpjs.com/v3/smtp.js">
+                
+            </script>
+        <script>
+            
+             function send(){
+                const name=document.getElementById('Name').value;
+            const email=document.getElementById('Email').value;
+            const phone=document.getElementById('Phone').value;
+            const message=document.getElementById('Message').value;
+            const body=(`name:-${name}<br> email:-${email} <br>phone:-${phone}<br>message:-${message}`)
+            console.log(body);
+            Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "sartaansari121sa@gmail.com",
+            Password : "DAF32B736C152DBD763CF988395D0D1E38FD",
+            To : 'sartaansari121sa@gmail.com',
+            From :"sartaansari121sa@gmail.com",
+            Subject : email,
+            Body :body
+        }).then(
+            message => alert("message sent successfully!")
+        );
+            }
+
+            
+        </script>
+    
+</body>
+
+</html>
